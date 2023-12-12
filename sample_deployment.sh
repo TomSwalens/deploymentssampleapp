@@ -28,7 +28,7 @@ docker build -t sample_deployment_image:latest .
 docker container stop sample_deployment_container
 docker run -t --rm -d -p 5555:5555 --name sample_deployment_container sample_deployment_image
 
-sleep 10
+sleep 25
 
 ### make log
 echo Date and time >> sample_deploy_log
