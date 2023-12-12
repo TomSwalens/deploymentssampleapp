@@ -23,7 +23,9 @@ echo "CMD python sample_app.py" >> Dockerfile
 ###
 echo "Dockerfile made."
 ### build and run image 
+docker image rm sample_deployment_image
 docker build -t sample_deployment_image:latest .
+docker container stop sample_deployment_container
 docker run -t --rm -d -p 5555:5555 --name sample_deployment_container sample_deployment_image
 
 sleep 10
