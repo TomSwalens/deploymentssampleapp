@@ -40,3 +40,4 @@ docker inspect sample_deployment_container >> sample_deploy_log
 cat sample_deploy_log
 
 curl http://localhost:5555
+curl 172.17.0.3:5555
