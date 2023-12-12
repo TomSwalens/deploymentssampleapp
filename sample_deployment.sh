@@ -35,6 +35,6 @@ docker image ls -a >> sample_deploy_log
 docker container ls -a >> sample_deploy_log
 docker inspect sample_deployment_image >> sample_deploy_log
 docker inspect sample_deployment_container >> sample_deploy_log
-cat sample_deploy_log >> sample_deploy_log
+cat sample_deploy_log
 
 curl localhost:5555
