@@ -6,8 +6,8 @@ mkdir sample_deployment
 cd sample_deployment
 ### git clone sampleapp
 echo "Downloading app for deployment"
-#git clone https://github.com/yroosel/sample_app.git
-git fetch --tags --force --progress -- https://github.com/TomSwalens/deploymentssampleapp +refs/heads/*:refs/remotes/origin/* # timeout=10
+git clone https://github.com/yroosel/sample_app.git
+#git fetch --tags --force --progress -- https://github.com/TomSwalens/deploymentssampleapp +refs/heads/*:refs/remotes/origin/* # timeout=10
 cd sample_app
 ### make docker file
 echo "Building docker File..."
