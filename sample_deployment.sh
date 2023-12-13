@@ -32,13 +32,12 @@ docker run -t --rm -d -p 5555:5555 --name sample_deployment_container sample_dep
 sleep 5
 
 ### make log
-echo Date and time >> sample_deploy_log
-date  >> sample_deploy_log
-docker image ls -a >> sample_deploy_log
-docker container ls -a >> sample_deploy_log
-docker inspect sample_deployment_image >> sample_deploy_log
-docker inspect sample_deployment_container >> sample_deploy_log
-cat sample_deploy_log
+echo Date and time
+date 
+docker image ls -a
+docker container ls -a
+docker inspect sample_deployment_image
+docker inspect sample_deployment_container
 
 curl http://localhost:5555
 curl 172.17.0.3:5555
